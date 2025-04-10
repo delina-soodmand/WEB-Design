@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "outline";
+    src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "outline";
+    src: url(assets/fonts/outfit/static/Outfit-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "aserif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: outline;
+}
+li::marker {
+    color: var(--Rose-800);
+  }
+body {
+    background-color: var(--Stone-100);
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.container {
+    background-color: var(--White);
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: aserif;
+    font-size: 2em;
+}
+
+p {
+    font-family: outline;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+.preparation-time {
+    padding: 2em 1em;
+    background-color: var(--Rose-50);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.preparation-time h3 {
+    color: var(--Rose-800);
+}
+
+ul {
+    margin-left: 1em;
+}
+
+hr{
+    border: 0.5px solid var(--Stone-150)
+}
